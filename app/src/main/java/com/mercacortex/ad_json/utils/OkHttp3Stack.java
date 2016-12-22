@@ -1,4 +1,4 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.utils;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;

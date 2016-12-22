@@ -1,4 +1,4 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.model;
 
 import com.google.gson.annotations.SerializedName;
 public class Phone {

@@ -8,16 +8,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.mercacortex.ad_json.PrimitivaRedActivity">
+    tools:context="com.mercacortex.ad_json.activity.PrimitivaRedActivity">
 
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnMostrarPrimitivaRed"/>
+        android:id="@+id/btnMostrarPrimitivaRed"
+        android:text="Primitiva en red"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/btnMostrarPrimitivaRed"
         android:id="@+id/txvPrimitivaRed"
         android:text=""/>
 </RelativeLayout>

@@ -1,10 +1,14 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.analisis;
 
 import android.os.Environment;
 import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mercacortex.ad_json.model.Contacto;
+import com.mercacortex.ad_json.model.Noticia;
+import com.mercacortex.ad_json.model.Telefono;
+import com.mercacortex.ad_json.model.Titular;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.mercacortex.ad_json.MainActivity">
+    tools:context="com.mercacortex.ad_json.main.MainActivity">
 
     <Button
         android:layout_width="wrap_content"

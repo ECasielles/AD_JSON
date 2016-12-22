@@ -1,10 +1,18 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.main;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.mercacortex.ad_json.R;
+import com.mercacortex.ad_json.activity.CreacionJSONGSONActivity;
+import com.mercacortex.ad_json.activity.ListaContactoActivity;
+import com.mercacortex.ad_json.activity.ListaContactoGSONActivity;
+import com.mercacortex.ad_json.activity.NoticiasActivity;
+import com.mercacortex.ad_json.activity.PrimitivaActivity;
+import com.mercacortex.ad_json.activity.PrimitivaRedActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,9 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn1 = (Button) findViewById(R.id.btnPrimitiva);
         btn2 = (Button) findViewById(R.id.btnPrimitivaRed);
         btn3 = (Button) findViewById(R.id.btnContactos);
-        btn4 = (Button) findViewById(R.id.btnDescargaContactos);
-        btn5 = (Button) findViewById(R.id.btnContactosGSON);
-        btn6 = (Button) findViewById(R.id.btnCreacionJSON);
+        btn4 = (Button) findViewById(R.id.btnContactosGSON);
+        btn5 = (Button) findViewById(R.id.btnCreacionJSON);
+        btn6 = (Button) findViewById(R.id.btnCreacionGSON);
         btn7 = (Button) findViewById(R.id.btnNoticias);
 
         btn1.setOnClickListener(this);
@@ -30,7 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn5.setOnClickListener(this);
         btn6.setOnClickListener(this);
         btn7.setOnClickListener(this);
-
     }
 
     @Override
@@ -50,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this, ListaContactoActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btnDescargaContactos:
+            case R.id.btnContactosGSON:
                 intent = new Intent(MainActivity.this, ListaContactoGSONActivity.class);
                 startActivity(intent);
                 break;

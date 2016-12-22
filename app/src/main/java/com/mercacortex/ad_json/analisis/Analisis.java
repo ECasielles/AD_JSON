@@ -1,6 +1,8 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.analisis;
 
 import android.util.Xml;
+
+import com.mercacortex.ad_json.model.Noticia;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

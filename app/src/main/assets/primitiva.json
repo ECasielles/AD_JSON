@@ -1,0 +1,31 @@
+{
+  "info": "Primitiva",
+  "sorteo": [
+    {
+      "id": "1",
+      "numero1": 1,
+      "numero2": 4,
+      "numero3": 15,
+      "numero4": 24,
+      "numero5": 43,
+      "numero6": 48,
+      "complementario": 28,
+      "reintegro": 9,
+      "fecha": "06-12-2012",
+      "numeroSorteo": 53
+    },{
+
+      "id": "2",
+      "numero1": 3,
+      "numero2": 5,
+      "numero3": 25,
+      "numero4": 26,
+      "numero5": 33,
+      "numero6": 36,
+      "complementario": 29,
+      "reintegro": 2,
+      "fecha": "08-12-2012",
+      "numeroSorteo": 56
+    }
+  ]
+}

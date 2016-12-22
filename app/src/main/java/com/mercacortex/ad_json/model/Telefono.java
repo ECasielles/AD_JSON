@@ -1,4 +1,4 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.model;
 
 public class Telefono {
     private String casa;

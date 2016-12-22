@@ -1,15 +1,21 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.activity;
 
-import android.net.http.RequestQueue;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.mercacortex.ad_json.analisis.AnalisisJSON;
+import com.mercacortex.ad_json.utils.MySingleton;
+import com.mercacortex.ad_json.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,28 +44,22 @@ public class PrimitivaRedActivity extends AppCompatActivity {
     }
 
     private void descarga() {
-
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
                 (Request.Method.GET, WEB, null, new Response.Listener<JSONObject>() {
-
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
                             mTextView.setText(AnalisisJSON.analizarPrimitiva(response));
                         } catch (JSONException e) {
-                            e.printStackTrace();
+                            Toast.makeText(PrimitivaRedActivity.this, e.getMessage(), Toast.LENGTH_LONG);
                         }
                     }
                 }, new Response.ErrorListener() {
-
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(PrimitivaRed_Activity.this,error.getMessage(),Toast.LENGTH_LONG);
-
+                        Toast.makeText(PrimitivaRedActivity.this, error.getMessage(), Toast.LENGTH_LONG);
                     }
                 });
-
-
         // Set the tag on the request.
         jsObjRequest.setTag(TAG);
         // Set retry policy

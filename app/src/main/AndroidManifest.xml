@@ -3,6 +3,7 @@
     package="com.mercacortex.ad_json">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -10,18 +11,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PrimitivaActivity" />
-        <activity android:name=".ListaContactoGSONActivity" />
-        <activity android:name=".ListaContactoActivity" />
-        <activity android:name=".PrimitivaRedActivity" />
-        <activity android:name=".CreacionJSONGSONActivity"></activity>
+        <activity android:name=".activity.PrimitivaActivity" />
+        <activity android:name=".activity.ListaContactoGSONActivity" />
+        <activity android:name=".activity.ListaContactoActivity" />
+        <activity android:name=".activity.PrimitivaRedActivity" />
+        <activity android:name=".activity.CreacionJSONGSONActivity"/>
+        <activity android:name=".activity.NoticiasActivity"/>
     </application>
 
 </manifest>

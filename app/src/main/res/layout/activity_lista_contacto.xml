@@ -8,12 +8,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.mercacortex.ad_json.ListaContactoActivity">
+    tools:context="com.mercacortex.ad_json.activity.ListaContactoActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnDescargaContactos"
+        android:text="Listado de contactos"
         />
 
     <ListView

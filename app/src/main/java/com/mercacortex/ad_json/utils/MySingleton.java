@@ -1,4 +1,4 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.utils;
 
 import com.android.volley.Request;
 
@@ -38,7 +38,6 @@ public class MySingleton {
                         cache.put(url, bitmap);
                     }
                 });
-
     }
 
     public static synchronized MySingleton getInstance(Context context) {

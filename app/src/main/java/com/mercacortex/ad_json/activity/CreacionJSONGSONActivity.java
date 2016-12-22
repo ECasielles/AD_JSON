@@ -1,4 +1,4 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.activity;
 
 import android.app.ProgressDialog;
 import android.os.Environment;
@@ -9,6 +9,11 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.loopj.android.http.FileAsyncHttpResponseHandler;
+import com.mercacortex.ad_json.analisis.Analisis;
+import com.mercacortex.ad_json.analisis.AnalisisJSON;
+import com.mercacortex.ad_json.model.Noticia;
+import com.mercacortex.ad_json.R;
+import com.mercacortex.ad_json.utils.RestClient;
 
 import org.json.JSONException;
 import org.xmlpull.v1.XmlPullParserException;
@@ -16,8 +21,6 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import cz.msebera.android.httpclient.entity.mime.Header;
 
 public class CreacionJSONGSONActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String WEB = "http://www.alejandrosuarez.es/feed/";

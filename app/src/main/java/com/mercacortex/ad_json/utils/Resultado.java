@@ -1,4 +1,4 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.utils;
 
 public class Resultado {
     private boolean codigo; //true es correcto y false indica error

@@ -1,12 +1,15 @@
-package com.mercacortex.ad_json;
+package com.mercacortex.ad_json.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import org.json.JSONArray;
+import com.mercacortex.ad_json.analisis.AnalisisJSON;
+import com.mercacortex.ad_json.utils.Memoria;
+import com.mercacortex.ad_json.R;
+import com.mercacortex.ad_json.utils.Resultado;
+
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class PrimitivaActivity extends AppCompatActivity {
 
